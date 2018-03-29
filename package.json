@@ -18,7 +18,6 @@
     "url": "https://github.com/pixijs/pixi.js.git"
   },
   "scripts": {
-    "install": "npm run clean && npm run dist && npm run lib",
     "clean": "rimraf dist lib && mkdirp dist && mkdir lib",
     "prestart": "npm run clean",
     "start": "parallelshell \"npm run watch\" \"npm run watch:lint\" \"npm run watch:lib\"",
