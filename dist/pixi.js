@@ -1,6 +1,6 @@
 /*!
  * pixi.js - v4.7.1
- * Compiled Thu, 29 Mar 2018 02:25:05 UTC
+ * Compiled Mon, 22 Apr 2019 06:15:26 UTC
  *
  * pixi.js is licensed under the MIT License.
  * http://www.opensource.org/licenses/mit-license
@@ -17407,7 +17407,7 @@ var WebGLRenderer = function (_SystemRenderer) {
         _this._contextOptions = {
             alpha: _this.transparent,
             antialias: _this.options.antialias,
-            premultipliedAlpha: _this.transparent && _this.transparent !== 'notMultiplied',
+            premultipliedAlpha: !_this.transparent,
             stencil: true,
             preserveDrawingBuffer: _this.options.preserveDrawingBuffer,
             powerPreference: _this.options.powerPreference

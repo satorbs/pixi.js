@@ -91,7 +91,7 @@ export default class WebGLRenderer extends SystemRenderer
         this._contextOptions = {
             alpha: this.transparent,
             antialias: this.options.antialias,
-            premultipliedAlpha: this.transparent && this.transparent !== 'notMultiplied',
+            premultipliedAlpha: !this.transparent,
             stencil: true,
             preserveDrawingBuffer: this.options.preserveDrawingBuffer,
             powerPreference: this.options.powerPreference,
